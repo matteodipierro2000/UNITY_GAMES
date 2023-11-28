@@ -16,7 +16,7 @@ public class take_off : MonoBehaviour
         {
             float x = Mathf.Cos(timeCounter);
             float y = (Mathf.Sin(timeCounter * 0.0001f) + timeCounter * 3);
-            float z = 0;
+            float z = -1;
             transform.position = new Vector3(x - 1.8f, y - 0.4f, z);
         }
     }
