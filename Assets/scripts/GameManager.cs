@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,9 +16,20 @@ public class GameManager : MonoBehaviour
     public GameObject youwin;
     
     private int score;
+    private int key_floppy;
+    public TextMesh flappy_win_text;
 
     private void Awake()
     {
+        string path = Application.dataPath + "/save_floppy.txt";
+        if(File.Exists(path))
+        {
+            key_floppy=int.Parse(File.ReadAllText(path));
+        }
+        else
+        {
+            key_floppy = 0;
+        }
         gameOver.SetActive(false);
 
         youwin.SetActive(false);
@@ -31,6 +44,8 @@ public class GameManager : MonoBehaviour
         score = 0;
 
         scoreText.text = score.ToString();
+
+        flappy_win_text.text = "";
 
         playButton.SetActive(false);
 
@@ -76,11 +91,16 @@ public class GameManager : MonoBehaviour
 
         if (score == 15)
         {
+            key_floppy++;
             youwin.SetActive(true);
-
+            if (key_floppy == 1)
+            {
+                flappy_win_text.text = "You have unlocked a memory! Let's look for it!";
+            }
             playButton.SetActive(true);
-
             Pause();
+            string path = Application.dataPath + "/save_floppy.txt";
+            File.WriteAllText(path, key_floppy.ToString());
         }
     }
 }

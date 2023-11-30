@@ -148,9 +148,9 @@ public class GameControllerScript : MonoBehaviour //we extend the MonoBehaviour 
         {
             score++; // add score
             scoreText.text = "Score: " + score;
-            if (score == 1) 
+            if (score == 20) 
             {
-                if (attempts <=10)
+                if (attempts <=60)
                 {
                     win.SetActive(true);
 
@@ -158,7 +158,10 @@ public class GameControllerScript : MonoBehaviour //we extend the MonoBehaviour 
                     //string json = JsonUtility.ToJson(keys.ToString());
                     string path = Application.dataPath + "/save.txt";
                     File.WriteAllText(path, keys.ToString());
-                    Win_text.text =  "You have gained a key! You can now unlock a memory!";
+                    if (keys == 1)
+                    {
+                        Win_text.text = "You have unlocked a memory! Let's look for it!";
+                    }
                     yield return new WaitForSeconds(5f);
                     win.SetActive(false);
                     Win_text.text = "";
@@ -166,10 +169,10 @@ public class GameControllerScript : MonoBehaviour //we extend the MonoBehaviour 
                 else
                 {
                     lose.SetActive(true);
-                    lose_text.SetActive(true);
+                    //lose_text.SetActive(true);
                     yield return new WaitForSeconds(8f);
                     lose.SetActive(false);
-                    lose_text.SetActive (false);
+                    //lose_text.SetActive (false);
                 }
             
             }

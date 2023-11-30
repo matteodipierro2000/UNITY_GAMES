@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -29,6 +30,8 @@ public class MovePlayer : MonoBehaviour
     float seconds;
     int t2 ;
     string t3;
+    private int key_maze;
+    [SerializeField] private TextMesh maze_win_text;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +40,15 @@ public class MovePlayer : MonoBehaviour
         startPositioN3 = fire3.transform.transform.position;
         startPos = transform.position;
         startTime = Time.time;
+        string path = Application.dataPath + "/save_maze.txt";
+        if (File.Exists(path))
+        {
+            key_maze = int.Parse(File.ReadAllText(path));
+        }
+        else
+        {
+            key_maze = 0;
+        }
     }
 
     // Update is called once per frame
@@ -151,8 +163,16 @@ public class MovePlayer : MonoBehaviour
         }
         if (collision.gameObject.name == "astronave_0")
         {
+            key_maze++;
+            if (key_maze == 1)
+            {
+                maze_win_text.text = "You have unlocked a memory! Let's look for it!";
+            }
+            string path = Application.dataPath + "/save_maze.txt";
+            File.WriteAllText(path, key_maze.ToString());
             wwin.transform.position = new Vector3(0,0,-1);
             yield return new WaitForSeconds(2);
+            maze_win_text.text = "";
             wwin.transform.position = new Vector3(0, 0, 1);
             SceneManager.LoadScene("takeoff");
         }
