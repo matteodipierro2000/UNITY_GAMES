@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      aereo_0: 8172303097353494086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

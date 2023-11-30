@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cerchio_0: -5842475909189783938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

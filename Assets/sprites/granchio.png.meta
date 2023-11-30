@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      granchio_0: -138001576243166955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

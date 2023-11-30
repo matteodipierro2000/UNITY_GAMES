@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barca_0: 199918378509569974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

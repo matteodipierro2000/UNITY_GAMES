@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      astronauta_0: 7101749257982015468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

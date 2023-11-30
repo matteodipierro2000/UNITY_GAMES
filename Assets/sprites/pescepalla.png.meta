@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pescepalla_0: -3567743228427313100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

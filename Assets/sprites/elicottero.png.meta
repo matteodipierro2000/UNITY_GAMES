@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      elicottero_0: 1100434157263796016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

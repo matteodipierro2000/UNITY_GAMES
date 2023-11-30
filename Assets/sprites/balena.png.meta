@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      balena_0: 9028963722501198476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

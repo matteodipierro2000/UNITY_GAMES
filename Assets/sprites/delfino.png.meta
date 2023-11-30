@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      delfino_0: 2144869783910159653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

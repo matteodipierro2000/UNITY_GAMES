@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mongolfiera_0: 4108328028427509559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

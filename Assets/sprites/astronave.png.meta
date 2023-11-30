@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      astronave_0: -1210603973565469761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

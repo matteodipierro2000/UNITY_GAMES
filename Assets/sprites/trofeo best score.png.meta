@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trofeo best score_0: -7749086062767777499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

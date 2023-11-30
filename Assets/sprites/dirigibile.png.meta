@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dirigibile_0: 3914396993512256154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
