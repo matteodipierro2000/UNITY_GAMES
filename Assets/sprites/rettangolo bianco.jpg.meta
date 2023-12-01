@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rettangolo bianco_0: -2433764965832968780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

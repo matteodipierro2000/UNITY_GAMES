@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e01e6e3c37980a14d9442e9327f72c73
+guid: 714f4a49cd8674aa289ffc582f5defec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2869524092553930650
-    second: 4_memoria_0
+      213: -6817036290430480306
+    second: muratore_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_memoria_0
+      name: muratore_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 779
-        height: 490
+        x: 30
+        y: 78
+        width: 726
+        height: 669
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 668d5ec8a076d28d0800000000000000
-      internalID: -2869524092553930650
+      spriteID: e40d1ffac950561a0800000000000000
+      internalID: -6817036290430480306
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      4_memoria_0: -2869524092553930650
+      muratore_0: -6817036290430480306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

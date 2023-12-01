@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lucchetto-rosso_0: -7313052496478275844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

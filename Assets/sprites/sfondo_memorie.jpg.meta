@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sfondo_memorie_0: -499095056412354578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

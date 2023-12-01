@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lucchetto_0: -748681846642289904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

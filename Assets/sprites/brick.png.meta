@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e01e6e3c37980a14d9442e9327f72c73
+guid: 51a1aa2baebb043238223724db19c2ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2869524092553930650
-    second: 4_memoria_0
+      213: -8219976580267834654
+    second: brick copia_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_memoria_0
+      name: brick copia_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 779
-        height: 490
+        x: 104
+        y: 177
+        width: 404
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 668d5ec8a076d28d0800000000000000
-      internalID: -2869524092553930650
+      spriteID: 2e20b1ff9d6cced80800000000000000
+      internalID: -8219976580267834654
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      4_memoria_0: -2869524092553930650
+      brick copia_0: -8219976580267834654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
