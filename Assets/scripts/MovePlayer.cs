@@ -32,7 +32,7 @@ public class MovePlayer : MonoBehaviour
     string t3;
     private int key_maze;
     [SerializeField] private TextMesh maze_win_text;
-    private bool isTimerRunning = true;
+    private bool isTimerRunning=true;
     // Start is called before the first frame update
     void Start()
     {
@@ -167,6 +167,7 @@ public class MovePlayer : MonoBehaviour
         }
         if (collision.gameObject.name == "astronave_0")
         {
+            isTimerRunning = false;
             key_maze++;
             if (key_maze == 1)
             {
@@ -181,14 +182,6 @@ public class MovePlayer : MonoBehaviour
             SceneManager.LoadScene("takeoff");
         }
     }
-    void OnCollisionEnter(Collision collision)
-    {
-        // Check if the collided object is astronave_0
-        if (collision.gameObject.name == "astronave_0")
-        {
-            // Stop the timer
-            isTimerRunning = false;
-        }
-    }
+
 }
 
