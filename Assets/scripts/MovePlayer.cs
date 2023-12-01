@@ -32,6 +32,7 @@ public class MovePlayer : MonoBehaviour
     string t3;
     private int key_maze;
     [SerializeField] private TextMesh maze_win_text;
+    private bool isTimerRunning = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -123,20 +124,23 @@ public class MovePlayer : MonoBehaviour
         {
             transform.position = transform.position + new Vector3(0, -1, 0) * speed * Time.deltaTime;
         }
-        float t = Time.time - startTime;
-        //float minutes = ((int)t / 60);
-        float seconds = t;
-        int t2 = 60 - (int)seconds;
-        string t3 = t2.ToString();
-        timerText.text = "Timer: " + t3 + " sec";
-        if (t2 == 0)
+        if (isTimerRunning)
         {
-            bl = true;
-        }
-        if(bl==true)
-        {
-            timerText.text = "Timer: 0 sec";
-            StartCoroutine(losee());
+            float t = Time.time - startTime;
+            //float minutes = ((int)t / 60);
+            float seconds = t;
+            int t2 = 60 - (int)seconds;
+            string t3 = t2.ToString();
+            timerText.text = "Timer: " + t3 + " sec";
+            if (t2 == 0)
+            {
+                bl = true;
+            }
+            if (bl == true)
+            {
+                timerText.text = "Timer: 0 sec";
+                StartCoroutine(losee());
+            }
         }
     }
     private IEnumerator losee()
@@ -163,7 +167,6 @@ public class MovePlayer : MonoBehaviour
         }
         if (collision.gameObject.name == "astronave_0")
         {
-            //Pause();
             key_maze++;
             if (key_maze == 1)
             {
@@ -178,11 +181,14 @@ public class MovePlayer : MonoBehaviour
             SceneManager.LoadScene("takeoff");
         }
     }
-    public void Pause()
+    void OnCollisionEnter(Collision collision)
     {
-        Time.timeScale = 0f;
-
-        enabled = false;
-
+        // Check if the collided object is astronave_0
+        if (collision.gameObject.name == "astronave_0")
+        {
+            // Stop the timer
+            isTimerRunning = false;
+        }
     }
 }
+
