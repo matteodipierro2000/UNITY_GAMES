@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
 
         scoreText.text = score.ToString();
 
-        if (score == 15)
+        if (score == 4)
         {
             key_floppy++;
             youwin.SetActive(true);

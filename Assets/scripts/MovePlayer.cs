@@ -163,6 +163,7 @@ public class MovePlayer : MonoBehaviour
         }
         if (collision.gameObject.name == "astronave_0")
         {
+            //Pause();
             key_maze++;
             if (key_maze == 1)
             {
@@ -176,5 +177,12 @@ public class MovePlayer : MonoBehaviour
             wwin.transform.position = new Vector3(0, 0, 1);
             SceneManager.LoadScene("takeoff");
         }
+    }
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+
+        enabled = false;
+
     }
 }
